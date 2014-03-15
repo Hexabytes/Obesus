@@ -8,8 +8,8 @@ End Code
     <h1>@ViewData("Title").</h1>
 </hgroup>
 
-<section id="loginForm">
-<h2>Utilice una cuenta local para iniciar sesión.</h2>
+<section id="loginForm" class="contenedor_negro">
+<h2 class="hverde">Iniciar sesión. (localhost)</h2>
 @Using Html.BeginForm(New With { .ReturnUrl = ViewData("ReturnUrl") })
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
@@ -40,8 +40,8 @@ End Code
 End Using
 </section>
 
-<section class="social" id="socialLoginForm">
-    <h2>Usar otro servicio para iniciar sesión.</h2>
+<section class="social contenedor_negro" id="socialLoginForm">
+    <h2 class="hverde">Usar otro servicio para iniciar sesión.</h2>
     @Html.Action("ExternalLoginsList", New With {.ReturnUrl = ViewData("ReturnUrl")})
 </section>
 

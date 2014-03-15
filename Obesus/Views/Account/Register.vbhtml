@@ -12,7 +12,8 @@ End Code
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
 
-    @<fieldset>
+    @<fieldset class="contenedor_negro formulario">
+         <h2 class="hverde">Nuevo usuario: </h2>
         <legend>Formulario de registro</legend>
         <ol>
             <li>

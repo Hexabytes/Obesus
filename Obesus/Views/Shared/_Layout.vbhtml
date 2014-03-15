@@ -3,7 +3,7 @@
     <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <title>@ViewData("Title") - Mi aplicación ASP.NET MVC</title>
+        <title>@ViewData("Title") - OBESUS</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -13,17 +13,19 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("su logotipo aquí", "Index", "Home")</p>
+                     <img id="logo" src="../Images/logo_256.png" height="50"> 
                 </div>
                 <div class="float-right">
-                    <section id="login">
+                    <section class="login">
                         @Html.Partial("_LoginPartial")
                     </section>
                     <nav>
                         <ul id="menu">
                             <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                            <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Sobrepeso", "Index", "Sobrepeso")</li>
+                            <li>@Html.ActionLink("Desnutricion", "Index", "Desnutricion")</li>
+                            <li>@Html.ActionLink("Dietas", "Index", "Dietas")</li>
+                            <li>@Html.ActionLink("Ejercicio", "Index", "Ejercicio")</li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +40,11 @@
         <footer>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET MVC</p>
+                    <p>&copy; @DateTime.Now.Year - OBESUS ASP.NET MVC</p>
+                    <ul class="menuFooter">
+                        <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    </ul>
                 </div>
             </div>
         </footer>

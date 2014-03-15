@@ -212,6 +212,10 @@
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="Controllers\DesnutricionController.vb" />
+    <Compile Include="Controllers\DietasController.vb" />
+    <Compile Include="Controllers\EjercicioController.vb" />
+    <Compile Include="Controllers\SobrepesoController.vb" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -253,6 +257,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="Content\Slideshow.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -307,7 +312,31 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\background_amarillo.jpg" />
+    <Content Include="Images\background_azul.jpg" />
+    <Content Include="Images\background_naranja.jpg" />
+    <Content Include="Images\background_rojo.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\img01.jpg" />
+    <Content Include="Images\img02.jpg" />
+    <Content Include="Images\img03.jpg" />
+    <Content Include="Images\img04.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo_256.png" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\slideshow.js" />
+    <Content Include="Views\Sobrepeso\Index.vbhtml" />
+    <Content Include="Views\Desnutricion\Index.vbhtml" />
+    <Content Include="Views\Dietas\Index.vbhtml" />
+    <Content Include="Views\Ejercicio\Index.vbhtml" />
+    <Content Include="Views\Shared\_LayoutEjercicio.vbhtml" />
+    <Content Include="Views\Shared\_LayoutDesnutricion.vbhtml" />
+    <Content Include="Views\Shared\_LayoutDietas.vbhtml" />
+    <Content Include="Views\Shared\_LayoutSobrepeso.vbhtml" />
+    <Content Include="Views\Sobrepeso\Imc.vbhtml" />
+    <Content Include="Views\Sobrepeso\Causas.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
@@ -386,9 +415,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>8840</DevelopmentServerPort>
+          <DevelopmentServerPort>17534</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8840/</IISUrl>
+          <IISUrl>http://localhost:17534/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
